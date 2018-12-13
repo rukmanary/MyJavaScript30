@@ -1,0 +1,197 @@
+  html {
+    font-size: 10px;
+    /* background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center; */
+    background: url(https://futurehomeshows.blob.core.windows.net/exhibitions/images/librariesprovider38/feature/screen-shot-2017-08-10-at-3-30-55-pm.png?sfvrsn=13fcec0e_2) bottom center;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* .keys1 {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keys2 {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  .playing1 {
+    transform: scale(1.1);
+    border-color: #0ac542;
+    box-shadow: 0 0 1rem #0ac542;;
+  }
+
+  .playing2 {
+    transform: scale(1.1);
+    border-color: #0a6bc5;
+    box-shadow: 0 0 1rem #0a6bc5;;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .vid {
+    display: flex;
+    flex: 1;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .awesome {
+    border: .4rem solid rgb(11, 5, 27);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 40rem;
+    text-align: center;
+    color: white;
+    background: rgba(11, 5, 27, 0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  .button {
+    background-color: rgba(255, 30, 0, 0.4);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+
+    /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 1, 1);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+  }
+
+  .info{
+    display: block;
+  }
+  .footer div{
+    flex: 1;
+  }
+
+  .footer-social { 
+    /* float: right; */
+    display: block;
+    margin-top:5px;
+  }
+
+  .footer-social ul { 
+    /* padding-top: 1%;
+    padding-left: 45%; */
+    padding: 0%;
+    margin-top: 5px;
+    display: block; 
+  }
+  
+  .footer-social li {
+    /* float:left;
+    list-style:none;
+    margin-left:5px; */
+    display: inline-block;
+  }
+
+  /* .createdBy{
+    display: block;
+    float: right;
+  } */

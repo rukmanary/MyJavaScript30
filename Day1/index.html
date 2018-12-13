@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="drum.png">
+</head>
+<body>
+    <div class="keys">
+        <div data-key="81" class="key">
+            <kbd>Q</kbd>
+            <span class="sound">CHINA1</span>
+        </div>
+        <div data-key="87" class="key">
+            <kbd>W</kbd>
+            <span class="sound">clave big hit</span>
+        </div>
+        <div data-key="69" class="key">
+            <kbd>E</kbd>
+            <span class="sound">CRASH1</span>
+        </div>
+        <div data-key="82" class="key">
+            <kbd>R</kbd>
+            <span class="sound">mrk-sd</span>
+        </div>
+        <div data-key="84" class="key">
+            <kbd>T</kbd>
+            <span class="sound">RIDEJAZZ</span>
+        </div>
+        <div data-key="89" class="key">
+            <kbd>Y</kbd>
+            <span class="sound">TOMHI1</span>
+        </div>
+        <div data-key="85" class="key">
+            <kbd>U</kbd>
+            <span class="sound">TOMHI3</span>
+        </div>
+        <div data-key="73" class="key">
+            <kbd>I</kbd>
+            <span class="sound">TOMLOW1</span>
+        </div>
+        <div data-key="79" class="key">
+            <kbd>O</kbd>
+            <span class="sound">TOMLOW2</span>
+        </div>
+        <div data-key="80" class="key">
+            <kbd>P</kbd>
+            <span class="sound">COWCLONE</span>
+        </div>
+    </div>
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+        </div>
+    </div>
+
+    <div class="keys">
+        <div data-key="90" class="key">
+            <kbd>Z</kbd>
+            <span class="sound">BDRUM13</span>
+        </div>
+        <div data-key="88" class="key">
+            <kbd>X</kbd>
+            <span class="sound">big burundi 16</span>
+        </div>
+        <div data-key="67" class="key">
+            <kbd>C</kbd>
+            <span class="sound">big burundi 30</span>
+        </div>
+        <div data-key="86" class="key">
+            <kbd>V</kbd>
+            <span class="sound">Kick 2 Reverb</span>
+        </div>
+        <div data-key="66" class="key">
+            <kbd>B</kbd>
+            <span class="sound">stick drum</span>
+        </div>
+        <div data-key="78" class="key">
+            <kbd>N</kbd>
+            <span class="sound">stick drum 2</span>
+        </div>
+        <div data-key="77" class="key">
+            <kbd>M</kbd>
+            <span class="sound">hirado B1</span>
+        </div>
+    </div>
+
+    <div class="vid">
+        <div class="awesome">
+            <button id="myBtn" class="button">Watch a Concert</button> <br>
+            <span class="link"></span>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=cZnBNuqqz5g">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Middle qwerty Keyboard: asdfghjkl -->
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    
+    <!-- Upper qwerty Keyboard: qwertyuiop -->
+    <audio data-key="81" src="sounds/New/CHINA1.wav.mp3"></audio>
+    <audio data-key="87" src="sounds/New/clave-big-hit-9.wav.mp3"></audio>
+    <audio data-key="69" src="sounds/New/CRASH1.wav.mp3"></audio>
+    <audio data-key="82" src="sounds/New/mrk-sd04.wav.mp3"></audio>
+    <audio data-key="84" src="sounds/New/RIDEJAZZ.wav.mp3"></audio>
+    <audio data-key="89" src="sounds/New/TOMHI1.wav.mp3"></audio>
+    <audio data-key="85" src="sounds/New/TOMHI3.wav.mp3"></audio>
+    <audio data-key="73" src="sounds/New/TOMLOW1.wav.mp3"></audio>
+    <audio data-key="79" src="sounds/New/TOMLOW2.wav.mp3"></audio>
+    <audio data-key="80" src="sounds/New/COWCLONE.wav.mp3"></audio>
+
+    <!-- Lower qwerty Keyboard: zxcvbnm -->
+    <audio data-key="90" src="sounds/New/BDRUM13.wav.mp3"></audio>
+    <audio data-key="88" src="sounds/New/big-burundi-16.wav.mp3"></audio>
+    <audio data-key="67" src="sounds/New/big-burundi-30.wav.mp3"></audio>
+    <audio data-key="86" src="sounds/New/prophet-Kick-2-Reverb.wav.mp3"></audio>
+    <audio data-key="66" src="sounds/New/stick drum.mp3"></audio>
+    <audio data-key="78" src="sounds/New/stick drum 2.mp3"></audio>
+    <audio data-key="77" src="sounds/New/hirado-B1.wav.mp3"></audio>
+
+    <footer>
+        <div class="footer">
+            <div class="links">
+                <p>I learn this from <a href="https://javascript30.com/" target="_blank"> javascript30 </a> thanks to <a href="https://wesbos.com/" target="_blank"> Wes Bos</a>
+                    <br> <p>I did a little bit modification</p> 
+                    <p>Background image from: <a href="https://www.londondrumshow.com/" target="_blank"> www.londondrumshow.com </a></p>
+                </p>
+            </div>
+            <div class="info">
+                <div class="createdBy">
+                    <p> Created by Ryandhika Rukmana &copy; 2018</p>
+                </div>
+                <div class="footer-social">
+                    <span>Connect with me:</span>
+                    <ul class="ul">
+                        <li><a href="https://github.com/rukmanary" target="_blank"><img src="assets/GitHub-Mark.png" alt="GitHub logo" width="20px" height="20px"></a></li>
+                        <li><a href="https://www.instagram.com/ryandhikarkmn/" target="_blank"><img src="assets/instagram.png" alt="Instagram logo" width="20px" height="20px"></a></li>
+                        <li><a href="https://twitter.com/Ryandhikarkmn" target="_blank"><img src="assets/twitter.png" alt="Twitter logo" width="20px" height="20px"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
